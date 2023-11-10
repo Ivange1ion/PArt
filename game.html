@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>    
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="menue">
+            <input id="color">
+            <input type="checkbox" id="true">
+            <div id="back">На главную</div>
+        </div>
+        <script>
+            const back=document.getElementById('back');
+            const border=document.getElementById('hiden');
+            
+            let tab=document.createElement('table');
+            for (let i=0; i<50;i++){
+                let tr=document.createElement('tr');
+                for(let j=0;j<50;j++){
+                    let td=document.createElement('td');
+                    td.style="border: 0.01vw solid #000000"
+                    td.style.width="3vw"
+                    td.style.height="1.5vw"
+                    tr.appendChild(td);
+                    td.addEventListener("click", function(){choise(td)})
+                }
+                
+                tab.append(tr);
+            }
+            tab.style="border-spacing: 0px 0px"
+            document.body.append(tab)
+            function choise(td){
+                if (!document.getElementById("true").checked){
+                    td.style.color=document.getElementById("color").value;
+                    td.style.backgroundColor=document.getElementById("color").value;
+                } else{
+                    td.style.backgroundColor="#FFFFFF"
+                }
+            }
+            back.onclick=()=>{
+                document.location.assign("/index.html")
+            }
+        </script>
+    </body>
+</html>

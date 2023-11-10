@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'KyivType Serif';
+    src: local('KyivType Serif Regular 2'), local('KyivType-Serif-Regular-2'),
+        url('KyivTypeSerif-Regular2.woff2') format('woff2'),
+        url('KyivTypeSerif-Regular2.woff') format('woff'),
+        url('KyivTypeSerif-Regular2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
