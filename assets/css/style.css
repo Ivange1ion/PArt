@@ -110,6 +110,7 @@
 }
 
 .buttons div{
+    cursor: pointer;
     border: 0.4vw solid;
     border-color: rgba(186, 167, 0, 1);
     outline: solid 0.1vw black; 

@@ -46,39 +46,10 @@
     height: 4vw;
     transform: translate(90vw, -15.5vw);
 }
-/* .events{
-    display: flex;
-    position: absolute;
-    left: 12%;
-    z-index: 2;
-    font-family: 'KyivType Serif';
-    font-weight: bold;
-    font-size: 3vw;
-    gap: 15%;
-    transform: translate(0, -35vw);
-} 
-.events div{
-    border: 1vw solid;
-    border-color:  rgba(255, 203, 0, 1);
-    flex-shrink: 0;
-    text-align: center;
-    background-color: rgba(255, 203, 0, 1);
-}
-.buttons{
-    display: flex;
-    font-family: 'KyivType Serif';
-    font-weight: bold;
-    font-size: 1.5vw;
-    gap: 12%;
-    left: 11%;
-    position: absolute;
-    z-index: 1;
-    top: 0.6vw;
-    align-items: center;
-} */
 
 .buttons{
     display: flex;
+    cursor: pointer;
     font-family: 'Press Start 2P';
     font-size: 1.05vw;
     gap: 7%;
@@ -88,6 +59,14 @@
     top: 0.6vw;
     align-items: center;
 }
+
+.quest{
+    position: absolute;
+    z-index: 2;
+    top: 14vw;
+    left: 13vw;
+}
+
 #about{
     flex: none;
     width: 16vw;
@@ -97,7 +76,8 @@
     /* top: -1%; */
     
 }
-.buttons p{
+.buttons div{
+    cursor: pointer;
     border: 0.4vw solid;
     border-color: rgba(186, 167, 0, 1);
     outline: solid 0.1vw black; 
@@ -157,9 +137,20 @@
 
 #blok{
     position: absolute;
+    background-image: url(/assets/img/info_abput.svg);
+    background-size: 100%;
     width: 80vw;
-    height: 50vw;
-    top: 1vw;
+    height: 37.2vw;
+    top: 6vw;
     z-index: 2;
     left: 10vw;
+}
+
+#abc{
+    position: absolute;
+    top: 9vw;
+    left: 13vw;
+    z-index: 2;
+    font-family: "KyivType serif";
+    color: rgba(193, 95, 228, 1);
 }

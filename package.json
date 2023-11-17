@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "browser-sync": "^2.29.3",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "init": "^0.1.2",
     "nodemon": "^3.0.1"
@@ -10,7 +11,7 @@
   "main": "Server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "star": "nodemon Server.js"
+    "star": "nodemon lab4_site.js"
   },
   "author": "",
   "license": "ISC",

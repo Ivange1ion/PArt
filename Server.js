@@ -1,7 +1,7 @@
 var express=require("express");
 var app=express();
+app.use(express.static("public"))
 app.get("", (req, res)=>{
-    // res.setHeader("Content-Type", "text/html/cs; charset=utf-8");
     res.sendFile("/Users/banya/PArt/index.html")
 })
 

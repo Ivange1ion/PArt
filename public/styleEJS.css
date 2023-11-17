@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "KyivType serif";
+    src: local('KyivType Serif'), local('KyivType-Serif'),
+    url('KyivTypeSerif-VarGX.ttf') format('woff2');
+}
+@font-face {
+    font-family: "Press Start 2P";
+    src: local('PressStart2P'),
+    url('PressStart2P-Regular.ttf') format('woff2');
+}
+
+/* ---------------- КЛАССЫ ------------------- */
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+    font-family: 'KyivType serif';
+    font-size:  1.9vw;;
+    position: absolute;
+    z-index: 2;
+    transform: translate(10vw, -13.5vw);
+}
+.links{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 0.7vw;
+    z-index: 2;
+    flex: none;
+    width: 4vw;
+    height: 4vw;
+    transform: translate(90vw, -15.5vw);
+}
+
+.buttons{
+    display: flex;
+    font-family: 'Press Start 2P';
+    font-size: 1.05vw;
+    gap: 7%;
+    left: 9%;
+    position: absolute;
+    z-index: 1;
+    top: 0.6vw;
+    align-items: center;
+}
+
+.buttons div{
+    cursor: pointer;
+    border: 0.4vw solid;
+    border-color: rgba(186, 167, 0, 1);
+    outline: solid 0.1vw black; 
+    flex-shrink: 0;
+    height: 1.5vw;
+    text-align: center;
+    padding-top: 0.4vw;
+    flex-basis: 32%;
+    background-color: rgba(255, 229, 0, 1);
+    box-shadow: 0vw 0.7vw 3px rgba(0, 0, 0, 0.5);
+}
+
+.quest{
+    position: absolute;
+    z-index: 2;
+    top: 14vw;
+    left: 13vw;
+}
+
+/* #support{
+    flex: none;
+    width: 16vw;
+    height: 2.5vw;
+    padding-top: 0.6vw;
+    font-size: 1.5vw;
+    
+} */
+
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.element {
+    transform: translate(0vw, -1vw);
+    height: 80vw;
+    width: 100%;
+    background-image: url(/images/pattern.jpg);
+    background-size: 7%;
+}
+
+body{
+    margin: auto;
+}
+
+#menu{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    top: 0.8vw;
+    right: 2%;
+    z-index: 1;
+    box-shadow: inset 4vw 0px 3px rgba(0, 0, 0, 0.4),
+    0px 0.5vw 3px rgba(0, 0, 0, 0.5);
+}
+
+#end{
+    position: absolute;
+    transform: translate(1.2vw, -110%);
+    width: 97vw;
+    z-index: 1;
+    height: 15vw;
+}
+
+#back{
+    position: relative;
+    left: 50%;
+}
+
+#blok{
+    position: absolute;
+    background-image: url(/images/info_abput.svg);
+    background-size: 100%;
+    width: 80vw;
+    height: 37.2vw;
+    top: 6vw;
+    z-index: 2;
+    left: 10vw;
+}
+
+#abc{
+    position: absolute;
+    top: 9vw;
+    left: 13vw;
+    z-index: 2;
+    font-family: "KyivType serif";
+    color: rgba(193, 95, 228, 1);
+}
