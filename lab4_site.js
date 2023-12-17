@@ -12,7 +12,13 @@ app.get('/game', (req, res)=>{
     res.render('game');
 })
 app.get('/about',(req,res)=>{
-    res.render('about')
+    res.render('about');
+})
+app.get('/arts', (req, res)=>{
+    res.render('collection');
+})
+app.get('/comunity', (req, res)=>{
+    res.render('comunity');
 })
 app.listen(8001);
 console.log('8001 is the port');

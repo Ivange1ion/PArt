@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "KyivType serif";
+    src: local('KyivType Serif'), local('KyivType-Serif'),
+    url('KyivTypeSerif-VarGX.ttf') format('woff2');
+}
+@font-face {
+    font-family: "Press Start 2P";
+    src: local('PressStart2P'),
+    url('PressStart2P-Regular.ttf') format('woff2');
+}
+
+.element {
+    position: absolute;
+    height: 80vw;
+    width: 100%;
+    background-image: url(images/pattern.svg);
+    background-size: 7%;
+}
+.buttons{
+    display: flex;
+    font-family: 'Press Start 2P';
+    font-size: 1.05vw;
+    gap: 9%;
+    left: 9%;
+    position: absolute;
+    z-index: 1;
+    top: 1vw;
+    align-items: center;
+}
+
+.buttons div{
+    cursor: pointer;
+    border: 0.4vw solid;
+    border-color: rgba(186, 167, 0, 1);
+    outline: solid 0.1vw black; 
+    flex-shrink: 0;
+    text-align: center;
+    flex-basis: 40%;
+    background-color: rgba(255, 229, 0, 1);
+    box-shadow: 0vw 0.7vw 3px rgba(0, 0, 0, 0.5);
+}
+
+#err{
+    background-color: rgba(255, 229, 0, 1);;
+    position: absolute;
+    left: 17vw;
+    text-align: center;
+    padding-left:3vw;
+    top: 10vw;
+    font-family: 'Press Start 2P';
+    font-size: 20vw;
+    z-index: 2;
+}

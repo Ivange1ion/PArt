@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>    
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body oncontextmenu="return false">
+        <!-- ----------------MODAL-COLOR-------------------- -->
+        <!-- Триггер/Открыть модальный -->
+        <p id="menuDraw">
+            <button id="back" onclick="window.location.href='/'">На главную</button>
+            <button id="myBtn">Выбрать цвет</button>
+        </p>
+        <input type="checkbox" id="view">
+
+        <!-- Модальный -->
+        <div id="myModal" class="modal1">
+            <div id="mydiv">
+
+                <div id="mydivheader">        
+                    <span class="cloze">&times;</span></div>
+                    <p><div class="menue">
+                        <input type="color" id="color">
+                        </div>
+                    </p>
+            </div>
+        </div>
+        
+        
+        
+        <script>
+            const back=document.getElementById('back');
+            const border=document.getElementById('hiden');
+            
+            let tab=document.createElement('table');
+            for (let i=0; i<50;i++){
+                let tr=document.createElement('tr');
+                for(let j=0;j<50;j++){
+                    let td=document.createElement('td');
+                    td.style="border: 0.01vw solid #000000"
+                    td.style.width="3vw"
+                    td.style.height="1.5vw"
+                    tr.appendChild(td);
+                    td.addEventListener("mousedown", (e)=>{
+                        if (e.bubtton!==2){
+                            td.style.color=document.getElementById("color").value;
+                            td.style.backgroundColor=document.getElementById("color").value;}
+                        if (e.button===2){
+                            td.style.backgroundColor="#FFFFFF"
+                        }
+                    })
+                }
+                
+                tab.append(tr);
+            }
+            tab.style="border-spacing: 0px 0px"
+            document.body.append(tab)
+            if (document.getElementById("view").checked){
+                // td.style.width="3vw"
+                // td.style.height="1.5vw"
+                td.style="border: 0vw solid #000000"
+            }
+        </script>
+        <script type="text/javascript" src="/modal.js"></script>
+    </body>
+</html>
